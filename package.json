@@ -7,7 +7,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "server": "node app.js",
         "client": "npm run start --prefix art-museum-client",
-        "start": "concurrently \"npm run server\" \"npm run client\""
+        "start": "concurrently \"npm run server\" \"npm run client\"",
+        "postinstall": "ng build -prod"
     },
     "author": "",
     "license": "ISC",
