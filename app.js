@@ -20,6 +20,11 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
+const path = require('path');
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname + '/dist/index.html'));
+});
+
 //Enabling CORS
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
