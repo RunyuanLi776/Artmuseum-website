@@ -1,0 +1,42 @@
+<!-- login page -->
+<div class="container">
+    <header></header>
+
+    <body>
+
+        <p *ngIf="!authService.isLoggedIn"><strong>
+    Log in to the Art Museums Website
+  </strong></p>
+        <p *ngIf="!authService.isLoggedIn">Please enter your information below</p>
+
+        <form (ngSubmit)="login()" *ngIf="!authService.isLoggedIn">
+            <div class="form-group">
+                <label for="username">Username</label>
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" [(ngModel)]="email" name="email" />
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="password">Password</label>
+            </div>
+
+            <div class="form-group">
+                <input type="password" class="form-control" [(ngModel)]="pwd" name="pwd" />
+            </div>
+            <br>
+            <div class="form-group">
+                <button (click)="login()">Login</button>
+
+            </div>
+            <br>
+            <div class="form-group">
+                <a routerLink="/register" class="btn btn-link">Don’t have an account? Register</a>
+            </div>
+        </form>
+        <button (click)="logout()" *ngIf="authService.isLoggedIn">Logout</button>
+        <button (click)="logoff()" *ngIf="authService.isLoggedIn">Logoff</button>
+
+    </body>
+</div>

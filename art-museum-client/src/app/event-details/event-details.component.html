@@ -1,0 +1,38 @@
+<!-- show event details information and button to book Event -->
+
+<div *ngIf="event" class="Outside">
+    <div class="date">
+        <!-- <p>Date</p> -->
+        {{event.date}}
+    </div>
+
+    <div class="title">
+        <!-- <p>Title</p> -->
+        {{event.title}}
+    </div>
+    <div class="image">
+    </div>
+
+    <div class="timeLocation">
+        <!-- <span>Start Time</span> -->
+        {{event.startTime}} - {{event.endTime}}<br> {{event.location}}
+    </div>
+
+    <div class="description">
+        {{event.description}}
+    </div>
+
+    <div>
+        <br>
+        <span *ngIf="ifLogin">
+     <button (click)="setCurrentEvent(event)">Book!</button>
+  </span>
+        <span *ngIf="!ifLogin">
+      <button routerLink="./book" routerLinkActive="active">Book!</button>
+  </span>
+    </div>
+
+</div>
+
+
+<router-outlet></router-outlet>

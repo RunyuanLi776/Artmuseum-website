@@ -1,0 +1,65 @@
+/*border format*/
+.border{
+  padding: 20px;
+}
+
+/*super grid format*/
+.grid{
+  display: grid;
+  align-content: stretch;
+  text-align: center;
+  vertical-align:middle;
+  font-size: 30px;
+  line-height: 100%;
+  font-family:Verdana;
+  color:#504e4e;
+}
+
+/*child grid format*/
+.grid0{
+  @extend .grid;
+  grid-template-columns: repeat(2,3);
+
+  /*cell format*/
+  .cell-one{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .cell-two{
+    grid-column: 2;
+    grid-row: 1;
+    //border: 3px solid #73AD21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cell-three{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cell-four{
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .cell-five{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .cell-six{
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+

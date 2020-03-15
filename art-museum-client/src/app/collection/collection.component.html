@@ -1,0 +1,24 @@
+<app-navigator></app-navigator>
+<div>
+    <li *ngFor="let collection of collections">
+        <div>
+            <a routerLink="{{collection.picture}}">
+                <img *ngIf="collection" [src]="collection.picture">
+                <p><strong>
+                {{collection.title}}
+              </strong></p>
+                <p>
+                {{collection.author}}
+                </p>
+                <p>
+                {{collection.culture}}
+              </p>
+              <p>
+                {{collection.place}}
+              </p>
+            </a>
+        </div>
+    </li>
+</div>
+<!-- <app-collectionsearch></app-collectionsearch> -->
+

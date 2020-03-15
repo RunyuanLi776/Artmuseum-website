@@ -1,0 +1,24 @@
+<app-navigator></app-navigator>
+<div *ngIf="collections">
+  <div *ngFor="let c of collections">
+      <li *ngIf="c.place === name">
+          <div >
+              <a routerLink="{{c.picture}}">
+                 <img [src]="c.picture">
+                 <p><strong>
+                  {{c.title}}
+                </strong></p>
+                <p>
+                  {{c.author}}
+                </p>
+                <p>
+                  {{c.culture}}
+                </p>
+                <p>
+                  {{c.place}}
+                </p>
+              </a>
+          </div>
+      </li>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<!-- <app-navigator></app-navigator> -->
+<div>
+    <h3><label for="search-field">Search collections</label></h3>
+    <input #searchBox id="search-field" (input)="search(searchBox.value)" />
+
+    <!-- <ul class="search-result">
+        <li *ngFor="let collection of collection$ | async">
+            <a routerLink="/{{collection.id}}">
+                {{collection.place}}
+            </a>
+        </li>    
+    </ul> -->
+</div>
+

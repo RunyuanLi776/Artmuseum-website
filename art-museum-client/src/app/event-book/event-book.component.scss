@@ -1,0 +1,25 @@
+.background {
+    height: 120%;
+    background: url("https://idscache.harvardartmuseums.org/ids/view/20028479?width=3000&height=3000") center no-repeat;
+}
+
+.Outside {
+    margin: auto;
+    width: 30%;
+    padding: 30px;
+    font-size: 20px;
+    font-family: Verdana;
+    label {
+        //color:#504e4e;
+        font-size: 25px;
+    }
+    input {
+        width: 400px;
+        height: 25px;
+    }
+    .added {
+        background-color: yellowgreen;
+        width: 200px;
+        font-size: 30px;
+    }
+}

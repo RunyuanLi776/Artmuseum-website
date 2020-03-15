@@ -1,0 +1,33 @@
+a {
+  font-family: 'Courier New';
+  font-size: 20px;
+  color: black;
+  float: left;
+  width: 45%;
+  padding: 30px;
+}
+/* unvisited link */
+a:link {
+  text-decoration:none;
+}
+/* visited link */
+a:visited {
+  text-decoration:none;
+}
+/* mouse over link */
+a:hover {
+  text-decoration:underline;
+}
+/* selected link */
+a:active {
+  text-decoration:underline;
+}
+
+li {
+  list-style: none;
+}
+
+div {
+  //border: 1px solid #73AD21;
+  text-align: center;
+}

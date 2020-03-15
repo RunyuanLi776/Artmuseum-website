@@ -1,0 +1,54 @@
+/*Everyday event list format*/
+
+li {
+    list-style: none;
+    font-family: Courier New;
+    font-weight: 600;
+    font-size: x-large;
+    line-height: 20px;
+}
+
+li a {
+    display: block;
+    border-radius: 12px;
+    // color: #b94a48;
+    color: rgb(31, 30, 30);
+    // background-color: cornsilk;
+    background-color: rgb(241, 239, 232);
+    padding: 8px 16px;
+    text-decoration: none;
+    width: 500px;
+}
+
+
+/*Everyday event list on hover format*/
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+/*flex layout*/
+
+.outside {
+    padding: 20px;
+    height: 640px;
+    padding-left: 60px;
+    padding-right: 6%;
+    display: flex;
+    justify-content: space-around;
+    //background: url("https://cdn.pixabay.com/photo/2017/08/10/02/05/tiles-shapes-2617112_1280.jpg") center;
+    background: url("https://cdn.pixabay.com/photo/2016/10/17/14/31/background-1747786_1280.jpg");
+    //background: url("https://idscache.harvardartmuseums.org/ids/view/20028479?width=3000&height=3000") center no-repeat;
+}
+
+.container {
+    padding-top: 140px;
+    width: 500px;
+}
+
+.events {
+    padding-top: 160px;
+    width: 500px;
+}

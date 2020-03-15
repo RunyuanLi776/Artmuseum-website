@@ -1,0 +1,35 @@
+<div class="background">
+    <div *ngIf="user" class="Outside">
+        <p><strong>User Account</strong></p>
+        <div>
+            <label>First Name: </label>
+            <input type="text" value="{{user.firstName}}" disabled>
+        </div>
+        <div>
+            <label>Last Name: </label>
+            <input type="text" value="{{user.lastName}}" disabled>
+        </div>
+        <div>
+            <label>E-mail: </label>
+            <input type="email" value="{{user.email}}" disabled>
+        </div>
+        <div>
+            <label>Password: </label>
+            <input type="password" value="{{user.password}}" disabled>
+        </div>
+        <div class="list">
+            <p class="added">Booked Events:</p>
+            <div *ngFor="let event of user.events" class="Events booked">
+                <div>
+                    {{event.title}}
+                </div>
+            </div>
+            <p class="added">Collections Added:</p>
+            <div *ngFor="let collection of user.collections">
+                <div>
+                    {{collection.Title}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
