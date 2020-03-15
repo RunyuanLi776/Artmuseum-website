@@ -8,7 +8,7 @@
         "server": "node app.js",
         "client": "npm run start --prefix art-museum-client",
 		"start": "concurrently \"npm run server\" \"npm run client\"",
-        "postinstall": "cd art-museum-client&npm install"
+        "postinstall": "cd art-museum-client&npm build"
     },
     "author": "",
     "license": "ISC",
